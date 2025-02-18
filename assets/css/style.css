@@ -407,6 +407,9 @@ img{
     .main-img{
         flex: 1;
     }
+    .construction-des{
+        max-width: unset;
+    }
     .construction-des h4,
     .item-tabs h4{
         font-size: 50px;
