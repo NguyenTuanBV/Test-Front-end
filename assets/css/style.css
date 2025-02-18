@@ -286,6 +286,9 @@ img{
 .image-right img:nth-child(2){
     margin: 20px 0 0 -20px;
 }
+.item-tabs{
+    margin-bottom: 30px;
+}
 .item-tabs h4{
     font-family: "Instrument Serif", serif;
     font-size: 58px;
