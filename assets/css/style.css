@@ -1,0 +1,458 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul li{
+    list-style: none;
+}
+img{
+    max-width: 100%;
+    object-fit: cover;
+}
+@font-face {
+    font-family: "Optima";
+    src: url("/assets/font/OptimaNovaLTProRegular.otf") format("opentype");
+}
+/* @media only screen and (min-width: 1900px){
+    .container{
+        padding: 0 50px;
+        margin: auto;
+    }
+}
+@media only screen and (min-width: 1400px){
+    .container{
+        max-width: 1140px;
+        margin: auto;
+    }
+} */
+ .container{
+    max-width: 90%;
+    margin: auto;
+ }
+.feature{
+    margin-top: 35px;
+}
+.main-feature{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.item-feature{
+    flex: 1;
+    padding: 40px 40px 0 40px;
+    border-radius: 20px;
+    background: linear-gradient(180deg, rgba(221, 212, 197, 0.00) 0%, #8E887E 100%);
+}
+.card__feature-img{
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 20px;
+    z-index: 1;
+}
+.card__feature-img > span{
+    font-family: "Poppins", serif;
+    font-size: 15px;
+    color: #1e1e1e;
+    font-weight: 500;
+    opacity: .4;
+}
+.image-card{
+    position: relative;
+    margin-top: 60px;
+}
+.image-card img{
+    display: block;
+}
+.title-card{
+    position: absolute;
+    left: 43px;
+    bottom: 50px;
+}
+.title-card h6{
+    font-family: "Poppins";
+    font-size: 31px;
+    font-weight: 500;
+    color: #fff;
+}
+.title-card h2{
+    font-family: "Poppins";
+    font-size: 150px;
+    line-height: 150px;
+    color: #fff;
+    font-weight: 500;
+}
+.feature-des{
+    flex: 1;
+}
+.card-feature-content{
+    padding: 45px;
+    border-radius: 20px;
+    background-color: #f7f7f8;
+}
+.item-content h6{
+    font-family: "Poppins";
+    font-size: 31px;
+    color: #1e1e1e;
+    font-weight: 500;
+}
+.item-content ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.item-content ul li{
+    flex: 1;
+    text-align: center;
+    padding: 0 10px;
+}
+.item-content ul li:not(:last-child){
+    border-right: 1px solid #0000001C;
+}
+.item-content ul li p{
+    font-family: "Poppins";
+    font-size: 17px;
+    color: #1e1e1e;
+    font-weight: 500;
+    margin-top: 14px;
+}
+.item-content ul li img{
+    height: 36px;
+}
+.other-img{
+    position: relative;
+    margin-top: 27px;
+}
+.other-img img{
+    border-radius: 20px;
+    width: 100%;
+    display: block;
+}
+.other-img a{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 16px 24px;
+    display: inline-block;
+    border-radius: 50px;
+    background-color: #827C6C;
+    color: #fff;
+    font-family: "Be Vietnam Pro", serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all .3s;
+}
+.other-img a:hover{
+    background-color: #fff;
+    color: #000;
+    transition: all .3s;
+}
+
+/**/
+.construction{
+    margin: 40px 0;
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.construction-des{
+    flex: 1;
+    max-width: 500px;
+}
+.main-img{
+    flex: 2;
+}
+.construction-des > span{
+    font-family: "Inter", serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    color: #402C22;
+    opacity: .7;
+    display: block;
+    margin-bottom: 15px;
+}
+.construction-des h4{
+    font-family: "Optima";
+    font-size: 63px;
+    font-style: normal;
+    font-weight: 400;
+    color: #402C22;
+}
+.construction-des ul{
+    margin-top: 40px;
+}
+.sub-title span{
+    font-family: "Optima";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    color: #402C22;
+}
+.sub-title{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.icon svg{
+    color: #402C22;
+}
+.description,
+.minus,
+.sub-title.active .icon .plus{
+    display: none;
+}
+.sub-title.active .icon .minus{
+    display: block;
+}
+.list-info.active .description{
+    display: block;
+}
+.list-info{
+    padding: 20px 0;
+}
+.list-info:not(:last-child){
+    border-bottom: 1px solid #D9D5D3;
+}
+.description{
+    padding-top: 15px;
+}
+.description p{
+    font-family: "Inter", serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    color: #402C22;
+    opacity: .8;
+    line-height: 23px;
+}
+.main-img img:nth-child(1){
+    width: 60%;
+}
+.main-img img:nth-child(2){
+    float: right;
+    width: calc(40% - 16px);
+}
+
+/*package*/
+.package{
+    background-color: #FFF9F5;
+    padding: 20px 0;
+}
+.tab-content{
+    display: none;
+}
+.tab-content.current{
+    display: block;
+}
+.heading-title{
+    position: relative;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.heading-title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 1px;
+    background-color: #F3EAE5;
+}
+.heading-title p{
+    font-family: "Instrument Serif", serif;
+    position: relative;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 400;
+    color: #462B20;
+    display: inline-block;
+    background-color: #FFF9F5;
+    padding: 0 34px;
+}
+.main-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.main-content img{
+    display: block;
+}
+.content-center{
+    flex: 1;
+    padding: 0 50px;
+}
+.image-left img:nth-child(2){
+    margin: 20px 0 0 20px;
+}
+.image-right img:nth-child(2){
+    margin: 20px 0 0 -20px;
+}
+.item-tabs h4{
+    font-family: "Instrument Serif", serif;
+    font-size: 58px;
+    font-weight: 400;
+    color: #462B20;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.tabs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 22px;
+}
+.list-tabs{
+    font-family: "Instrument Serif", serif;
+    padding: 2px 14px;
+    font-size: 20px;
+    color: #462B20;
+    font-weight: 400;
+    opacity: .4;
+    cursor: pointer;
+    transition: all .4s;
+}
+.list-tabs:hover,
+.list-tabs.current{
+    opacity: 1;
+    transition: all .4s;
+}
+.list-tabs:not(:last-child){
+    border-right: 1px solid #F3EAE5;
+}
+.tab-content p{
+    font-family: "Inter", serif;
+    font-size: 16px;
+    color: #462B20;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: center;
+}
+/* @media (min-width: 576px) {
+    .container {
+        max-width:540px
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width:720px
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width:960px
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width:1140px
+    }
+} */
+@media only screen and (max-width: 1440px){
+    .image-left,
+    .image-right{
+        max-width: 150px;
+    }
+}
+@media only screen and (max-width: 1200px){
+    .container{
+        padding: 0 50px;
+    }
+    .title-card h2{
+        font-size: 90px;
+        line-height: unset;
+    }
+    .main-img{
+        flex: 1;
+    }
+    .construction-des h4,
+    .item-tabs h4{
+        font-size: 50px;
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    .content-center{
+        order: 1;
+        width: 100%;
+        flex: auto;
+        padding: 0;
+        margin-bottom: 40px;
+    }
+    .image-left{
+        order: 2;
+    }
+    .image-right{
+        order: 3;
+    }
+    .image-left, .image-right{
+        width: calc(50% - 15px);
+        max-width: unset;
+    }
+    .image-right img{
+        float: right;
+    }
+    .image-right img:nth-child(2){
+        margin: 20px 20px 0 0;
+    }
+    .main-content img{
+        display: inline;
+    }
+}
+
+@media only screen and (max-width: 991px){
+    .main-feature,
+    .content{
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 767.98px){
+    .container{
+        max-width: 100%;
+        width: 100%;
+        padding: 0 15px;
+    }
+    .title-card h6{
+        font-size: 24px;
+    }
+    .title-card h2{
+        font-size: 65px;
+    }
+    .title-card{
+        left: 0;
+        right: 0;
+        bottom: 20px;
+    }
+    .card-feature-content{
+        padding: 20px;
+    }
+    .item-content h6{
+        font-size: 25px;
+    }
+    .item-content ul li p{
+        font-size: 14px;
+    }
+    .construction-des h4, .item-tabs h4{
+        font-size: 36px;
+    }
+    .item-tabs{
+        margin-bottom: 30px;
+    }
+    .image-left img:nth-child(2),
+    .image-right img:nth-child(2){
+        margin: 20px 0 0;
+    }
+    
+}
