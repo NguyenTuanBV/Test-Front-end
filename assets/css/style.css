@@ -15,18 +15,7 @@ img{
     font-family: "Optima";
     src: url("/assets/font/OptimaNovaLTProRegular.otf") format("opentype");
 }
-/* @media only screen and (min-width: 1900px){
-    .container{
-        padding: 0 50px;
-        margin: auto;
-    }
-}
-@media only screen and (min-width: 1400px){
-    .container{
-        max-width: 1140px;
-        margin: auto;
-    }
-} */
+
  .container{
     max-width: 90%;
     margin: auto;
@@ -337,29 +326,6 @@ img{
     line-height: 25px;
     text-align: center;
 }
-/* @media (min-width: 576px) {
-    .container {
-        max-width:540px
-    }
-}
-
-@media (min-width: 768px) {
-    .container {
-        max-width:720px
-    }
-}
-
-@media (min-width: 992px) {
-    .container {
-        max-width:960px
-    }
-}
-
-@media (min-width: 1200px) {
-    .container {
-        max-width:1140px
-    }
-} */
 @media only screen and (max-width: 1440px){
     .image-left,
     .image-right{
