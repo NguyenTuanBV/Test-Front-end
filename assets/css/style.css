@@ -18,6 +18,7 @@ img{
 
 .wrapper{
     max-width: 1920px;
+    margin: auto;
 }
 .container{
     max-width: 90%;
@@ -189,6 +190,7 @@ img{
 }
 .construction-des ul{
     margin-top: 40px;
+    max-width: 452px;
 }
 .sub-title span{
     font-family: "Optima";
@@ -389,6 +391,9 @@ img{
     }
     .package{
         padding: 32px 30px 72px 30px;
+    }
+    .card-feature-content{
+        padding: 45px 35px;
     }
 }
 @media only screen and (max-width: 1200px){
