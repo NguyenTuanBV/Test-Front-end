@@ -16,10 +16,13 @@ img{
     src: url("/assets/font/OptimaNovaLTProRegular.otf") format("opentype");
 }
 
- .container{
+.wrapper{
+    max-width: 1920px;
+}
+.container{
     max-width: 90%;
     margin: auto;
- }
+}
 .feature{
     margin-top: 35px;
 }
@@ -30,7 +33,7 @@ img{
 }
 .item-feature{
     flex: 1;
-    padding: 40px 40px 0 40px;
+    padding: 40px 36px 0 59px;
     border-radius: 20px;
     background: linear-gradient(180deg, rgba(221, 212, 197, 0.00) 0%, #8E887E 100%);
 }
@@ -59,8 +62,8 @@ img{
 }
 .title-card{
     position: absolute;
-    left: 43px;
-    bottom: 50px;
+    left: -33px;
+    bottom: 25px;
 }
 .title-card h6{
     font-family: "Poppins";
@@ -71,9 +74,10 @@ img{
 .title-card h2{
     font-family: "Poppins";
     font-size: 150px;
-    line-height: 150px;
+    line-height: 146px;
     color: #fff;
     font-weight: 500;
+    letter-spacing: -8.26px;
 }
 .feature-des{
     flex: 1;
@@ -87,22 +91,26 @@ img{
     font-family: "Poppins";
     font-size: 31px;
     color: #1e1e1e;
+    text-align: center;
     font-weight: 500;
 }
 .item-content ul{
     display: flex;
     flex-wrap: wrap;
-    margin-top: 40px;
+    margin-top: 85px;
 }
 .item-content ul li{
     flex: 1;
     text-align: center;
+    height: 132px;
+    align-content: center;
     padding: 0 10px;
 }
 .item-content ul li:not(:last-child){
     border-right: 1px solid #0000001C;
 }
-.item-content ul li p{
+.item-content ul li p,
+.item-content ul li span{
     font-family: "Poppins";
     font-size: 17px;
     color: #1e1e1e;
@@ -144,6 +152,9 @@ img{
 }
 
 /**/
+.container-ct{
+    padding-left: 59px;
+}
 .construction{
     margin: 40px 0;
 }
@@ -154,7 +165,7 @@ img{
 }
 .construction-des{
     flex: 1;
-    max-width: 500px;
+    max-width: 570px;
 }
 .main-img{
     flex: 2;
@@ -234,7 +245,7 @@ img{
 /*package*/
 .package{
     background-color: #FFF9F5;
-    padding: 20px 0;
+    padding: 32px 96px 72px 113px;
 }
 .tab-content{
     display: none;
@@ -245,7 +256,7 @@ img{
 .heading-title{
     position: relative;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 88px;
 }
 .heading-title::before{
     content: '';
@@ -276,26 +287,51 @@ img{
 .main-content img{
     display: block;
 }
+.image-left{
+    margin-top: 66px;
+}
+.image-right{
+    margin-top: 24px;
+}
+.image-left img:nth-child(1){
+    margin-bottom: 179px;
+}
+.image-right img:nth-child(1){
+    margin-bottom: 157px;
+}
 .content-center{
     flex: 1;
-    padding: 0 50px;
+    max-width: 636px;
 }
 .image-left img:nth-child(2){
-    margin: 20px 0 0 20px;
+    margin: 0 0 0 56px;
 }
 .image-right img:nth-child(2){
-    margin: 20px 0 0 -20px;
+    margin: 0 0 0 -55px;
 }
 .item-tabs{
-    margin-bottom: 35px;
+    position: relative;
 }
+.item-tabs:not(:last-child){
+    margin-bottom: 113px;
+}
+.item-tabs:not(:last-child)::before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -56px;
+    width: 160px;
+    height: 1px;
+    background-color: #F3EAE5;
+}   
 .item-tabs h4{
     font-family: "Instrument Serif", serif;
     font-size: 58px;
     font-weight: 400;
     color: #462B20;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 32px;
 }
 .tabs{
     display: flex;
@@ -305,7 +341,7 @@ img{
 }
 .list-tabs{
     font-family: "Instrument Serif", serif;
-    padding: 2px 14px;
+    padding: 2px 12px;
     font-size: 20px;
     color: #462B20;
     font-weight: 400;
@@ -329,10 +365,30 @@ img{
     line-height: 25px;
     text-align: center;
 }
+@media only screen and (min-width: 1900px){
+    .container-ft{
+        padding: 0 164px;
+        max-width: 100%;
+    }
+    .image-card{
+        margin-top: 125px;
+    }
+    .title-card{
+        position: absolute;
+        left: -23px;
+        bottom: 35px;
+    }
+    .item-content h6{
+        padding: 0 119px;
+    }
+}
 @media only screen and (max-width: 1440px){
     .image-left,
     .image-right{
         max-width: 150px;
+    }
+    .package{
+        padding: 32px 30px 72px 30px;
     }
 }
 @media only screen and (max-width: 1200px){
@@ -350,15 +406,19 @@ img{
     .item-tabs h4{
         font-size: 50px;
     }
-}
 
-@media only screen and (max-width: 1024px){
+    .main-feature,
+    .content{
+        flex-direction: column;
+    }
+
     .content-center{
         order: 1;
         width: 100%;
         flex: auto;
         padding: 0;
         margin-bottom: 40px;
+        margin: auto;
     }
     .image-left{
         order: 2;
@@ -374,19 +434,18 @@ img{
         float: right;
     }
     .image-right img:nth-child(2){
-        margin: 20px 20px 0 0;
+        margin: 20px 20px 0 55px;
+        float: unset;
     }
     .main-content img{
         display: inline;
     }
-}
-
-@media only screen and (max-width: 991px){
-    .main-feature,
-    .content{
-        flex-direction: column;
+    .image-left img:nth-child(1),
+    .image-right img:nth-child(1){
+        margin-bottom: 20px;
     }
 }
+
 @media only screen and (max-width: 767.98px){
     .container{
         max-width: 100%;
@@ -396,16 +455,25 @@ img{
     .title-card h6{
         font-size: 24px;
     }
+    .item-feature{
+        padding: 40px 36px 0 36px;
+    }
     .title-card h2{
         font-size: 65px;
+        line-height: 65px;
+        letter-spacing: -1.26px;
     }
+    
     .title-card{
-        left: 0;
+        left: -14px;
         right: 0;
         bottom: 20px;
     }
     .card-feature-content{
         padding: 20px;
+    }
+    .container-ct{
+        padding: 0 15px;
     }
     .item-content h6{
         font-size: 25px;
@@ -413,15 +481,32 @@ img{
     .item-content ul li p{
         font-size: 14px;
     }
+    .item-content ul{
+        margin-top: 30px;
+    }
+    .item-content ul li:nth-child(2){
+        border: none;
+    }
     .construction-des h4, .item-tabs h4{
         font-size: 36px;
     }
     .item-tabs{
         margin-bottom: 30px;
     }
+    .package{
+        padding: 30px 15px;
+    }
+    .heading-title{
+        margin-bottom: 30px;
+    }
+    .item-tabs:not(:last-child){
+        margin-bottom: 42px;
+    }
+    .item-tabs:not(:last-child)::before{
+        bottom: -23px;
+    }
     .image-left img:nth-child(2),
     .image-right img:nth-child(2){
         margin: 20px 0 0;
     }
-    
 }
